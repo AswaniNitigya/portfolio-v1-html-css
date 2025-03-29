@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Nitigya Aswani</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .not-found {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - var(--nav-height));
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .not-found h1 {
+            font-size: 8rem;
+            margin-bottom: 0;
+            color: var(--accent-color);
+        }
+
+        .not-found h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .not-found p {
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--accent-color);
+            color: var(--primary-bg);
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="/" class="active">HOME</a></li>
+                <li><a href="/#projects">PROJECTS</a></li>
+                <li><a href="/#links">LINKS</a></li>
+                <li><a href="/#contact">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cursor"></div>
+
+    <main>
+        <section class="not-found">
+            <h1>404</h1>
+            <h2>Page Not Found</h2>
+            <p>The page you're looking for doesn't exist or has been moved.</p>
+            <a href="/" class="button">Go Home</a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

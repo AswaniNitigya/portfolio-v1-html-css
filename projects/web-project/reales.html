@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate | Aswani Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .hero-section {
+            background: url('https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyaminmellish-186077.jpg&fm=jpg') no-repeat center center/cover;
+            color: white;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .property-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .property-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="ceo.html">Aswani Group</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="game.html">Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div>
+            <h1 class="display-4">Find Your Dream Property</h1>
+            <p class="lead">Building homes and communities for a better tomorrow.</p>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="py-5">
+        <div class="container text-center">
+            <h2>Featured Properties</h2>
+            <p class="mb-4">Explore our premium real estate offerings.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card property-card">
+                        <img src="https://media.istockphoto.com/id/488120139/photo/modern-real-estate.jpg?s=612x612&w=0&k=20&c=88jk1VLSoYboMmLUx173sHs_XrZ9pH21as8lC7WINQs=" alt="Luxury Apartment">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Apartments</h5>
+                            <p class="card-text">Modern apartments with state-of-the-art amenities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card property-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1682377521753-58d1fd9fa5ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwdmlsbGF8ZW58MHx8MHx8fDA%3D" alt="Villas">
+                        <div class="card-body">
+                            <h5 class="card-title">Exclusive Villas</h5>
+                            <p class="card-text">Elegant villas designed for luxury living.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card property-card">
+                        <img src="https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Commercial Spaces">
+                        <div class="card-body">
+                            <h5 class="card-title">Commercial Spaces</h5>
+                            <p class="card-text">Prime locations for your business ventures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Our Services</h2>
+            <p class="mb-4">Comprehensive real estate solutions tailored to your needs.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Property Management</h5>
+                            <p class="card-text">Professional management for hassle-free ownership.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Real Estate Consulting</h5>
+                            <p class="card-text">Expert advice to make informed property decisions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Construction Services</h5>
+                            <p class="card-text">From design to delivery, we build your dreams.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>We are here to help you find your ideal property.</p>
+            <form class="w-50 mx-auto">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="validateForm(event);">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Aswani Group Real Estate Division. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); 
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email|| !message) {
+                alert('All fields are mandatory');
+                return false;
+            }
+
+
+            alert('Registration successful!');
+            return true;
+        }
+    </script>
+</body>
+
+</html>

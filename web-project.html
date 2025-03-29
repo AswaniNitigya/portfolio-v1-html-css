@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Project - Nitigya Aswani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#projects" class="active">PROJECTS</a></li>
+                <li><a href="index.html#links">LINKS</a></li>
+                <li><a href="index.html#contact">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cursor"></div>
+
+    <main>
+        <section class="project-detail-section">
+            <div class="container">
+                <div class="back-link">
+                    <a href="index.html#projects"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                </div>
+                
+                <div class="project-header">
+                    <div class="project-title">
+                        <i class="fas fa-code project-icon"></i>
+                        <h1>Basic Web Development</h1>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    <p>A simple website built using HTML, CSS, and JavaScript fundamentals. This project demonstrates the core concepts of web development, including responsive design, basic interactivity, and modern web design principles.</p>
+                </div>
+                
+                <div class="project-content">
+                    <div class="content-section live-preview-section">
+                        <h2>Live Website Preview</h2>
+                        <div class="website-preview">
+                            <div class="preview-header">
+                                <div class="preview-controls">
+                                    <span class="control red"></span>
+                                    <span class="control yellow"></span>
+                                    <span class="control green"></span>
+                                </div>
+                                <div class="preview-address">
+                                    <i class="fas fa-lock"></i>
+                                    <span>aswanigroup.example.com</span>
+                                </div>
+                            </div>
+                            <div class="preview-frame">
+                                <iframe src="projects/web-project/index.html" class="website-iframe" title="Aswani Group Website"></iframe>
+                            </div>
+                            <div class="preview-actions">
+                                <a href="projects/web-project/index.html" target="_blank" class="preview-button"><i class="fas fa-desktop"></i> View Full Site</a>
+                                <a href="projects/web-project/" target="_blank" class="preview-button secondary"><i class="fas fa-code"></i> View Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Project Files</h2>
+                        <div class="files-grid">
+                            <div class="file-card">
+                                <div class="file-header">
+                                    <i class="fab fa-html5 file-icon"></i>
+                                    <h3>index.html</h3>
+                                </div>
+                                <div class="file-preview">
+                                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Web Project&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;
+            &lt;a href="#"&gt;Home&lt;/a&gt;
+            &lt;a href="#about"&gt;About&lt;/a&gt;
+            &lt;a href="#gallery"&gt;Gallery&lt;/a&gt;
+            &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;section id="hero"&gt;
+            &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;/section&gt;
+        
+        &lt;!-- More sections --&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 My Project&lt;/p&gt;
+    &lt;/footer&gt;
+    
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                                </div>
+                            </div>
+                            
+                            <div class="file-card">
+                                <div class="file-header">
+                                    <i class="fab fa-css3-alt file-icon"></i>
+                                    <h3>styles.css</h3>
+                                </div>
+                                <div class="file-preview">
+                                    <pre><code>/* Basic styling for the website */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-color: #333;
+    --bg-color: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+}
+
+/* More styles... */</code></pre>
+                                </div>
+                            </div>
+                            
+                            <div class="file-card">
+                                <div class="file-header">
+                                    <i class="fab fa-js file-icon"></i>
+                                    <h3>script.js</h3>
+                                </div>
+                                <div class="file-preview">
+                                    <pre><code>// JavaScript for the website
+document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    
+    // More interactive functionality...
+});</code></pre>
+                                </div>
+                            </div>
+                            
+                            <div class="file-card">
+                                <div class="file-header">
+                                    <i class="fas fa-images file-icon"></i>
+                                    <h3>assets/</h3>
+                                </div>
+                                <div class="file-preview">
+                                    <div class="folder-preview">
+                                        <ul class="folder-files-list">
+                                            <li><i class="fas fa-image"></i> hero-image.jpg</li>
+                                            <li><i class="fas fa-image"></i> gallery-1.jpg</li>
+                                            <li><i class="fas fa-image"></i> gallery-2.jpg</li>
+                                            <li><i class="fas fa-image"></i> gallery-3.jpg</li>
+                                            <li><i class="fas fa-font"></i> fonts/</li>
+                                            <li><i class="fas fa-icons"></i> icons/</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Project Features</h2>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h3>Responsive Design</h3>
+                                <p>The website is fully responsive, adapting to different screen sizes from desktop to mobile. Implemented using CSS media queries and flexible layout techniques.</p>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <h3>Interactive Elements</h3>
+                                <ul>
+                                    <li>Smooth scrolling navigation</li>
+                                    <li>Image gallery with lightbox</li>
+                                    <li>Contact form with validation</li>
+                                    <li>Animated transitions</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <h3>Learning Outcomes</h3>
+                                <ul>
+                                    <li>HTML5 semantic structure</li>
+                                    <li>CSS layout techniques (Flexbox & Grid)</li>
+                                    <li>JavaScript DOM manipulation</li>
+                                    <li>Web performance optimization</li>
+                                    <li>Cross-browser compatibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Gallery Section -->
+                    <div class="content-section gallery-section">
+                        <h2>Project Screenshots</h2>
+                        <div class="project-gallery">
+                            <div class="gallery-grid">
+                                <div class="gallery-item" onclick="openLightbox(0)">
+                                    <img src="projects/web-project/images/screenshot1.jpg" alt="Website Screenshot 1" class="gallery-image">
+                                </div>
+                                <div class="gallery-item" onclick="openLightbox(1)">
+                                    <img src="projects/web-project/images/screenshot2.jpg" alt="Website Screenshot 2" class="gallery-image">
+                                </div>
+                                <div class="gallery-item" onclick="openLightbox(2)">
+                                    <img src="projects/web-project/images/screenshot3.jpg" alt="Website Screenshot 3" class="gallery-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+    <!-- Lightbox Element -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+            <button class="lightbox-nav prev-btn" onclick="changeImage(-1)"><i class="fas fa-chevron-left"></i></button>
+            <img id="lightbox-img" src="" alt="Fullscreen Image">
+            <button class="lightbox-nav next-btn" onclick="changeImage(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    
+    <script>
+        // Gallery image array
+        const galleryImages = [
+            "projects/web-project/images/screenshot1.jpg",
+            "projects/web-project/images/screenshot2.jpg",
+            "projects/web-project/images/screenshot3.jpg"
+        ];
+        
+        let currentImageIndex = 0;
+        
+        // Lightbox functionality
+        function openLightbox(index) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            currentImageIndex = index;
+            lightboxImg.src = galleryImages[currentImageIndex];
+            lightbox.style.display = 'block';
+            
+            // Prevent scrolling when lightbox is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            
+            // Re-enable scrolling
+            document.body.style.overflow = 'auto';
+        }
+        
+        function changeImage(direction) {
+            currentImageIndex = (currentImageIndex + direction + galleryImages.length) % galleryImages.length;
+            document.getElementById('lightbox-img').src = galleryImages[currentImageIndex];
+        }
+        
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('lightbox').style.display === 'block') {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowRight') {
+                    changeImage(1);
+                } else if (e.key === 'ArrowLeft') {
+                    changeImage(-1);
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

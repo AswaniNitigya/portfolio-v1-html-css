@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitigya Aswani - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#links">LINKS</a></li>
+                <li><a href="#contact">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cursor"></div>
+
+    <main>
+        <!-- Home section with its own background -->
+        <section id="home" class="home-section">
+            <div class="video-background">
+                <video autoplay muted loop playsinline id="home-bg-video">
+                    <source src="icons/background1.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"></div>
+            </div>
+            <div class="container">
+                <div class="intro-container">
+                    <div class="intro">
+                        <h1><span class="intro-greeting">Hi, I'm</span><span class="highlight handwritten">Nitigya Aswani</span></h1>
+                        <h2>Software Developer</h2>
+                        
+                        <p class="bio">
+                            A First year student at MMMUT Gorakhpur who loves to learn a lot and finding solution to problems around me
+                        </p>
+                        
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/nitigyaaswani/" target="_blank" rel="noopener noreferrer">
+                                <img src="icons/linkedin-logo.png" alt="LinkedIn" class="social-icon">
+                            </a>
+                            <a href="https://github.com/AswaniNitigya" target="_blank" rel="noopener noreferrer">
+                                <img src="icons/github.png" alt="GitHub" class="social-icon">
+                            </a>
+                            <a href="https://leetcode.com/u/AswaniNitigya/" target="_blank" rel="noopener noreferrer">
+                                <img src="icons/leetcode.webp" alt="LeetCode" class="social-icon">
+                            </a>
+                            <a href="https://www.codechef.com/users/nitigyaaswani" target="_blank" rel="noopener noreferrer">
+                                <img src="icons/Codechef.webp" alt="CodeChef" class="social-icon">
+                            </a>
+                            <a href="https://codeforces.com/profile/aswaninitigya" target="_blank" rel="noopener noreferrer">
+                                <img src="icons/codeforces.webp" alt="CodeForces" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile-photo-container">
+                        <img src="icons/nitigya aswani.jpeg" alt="Nitigya Aswani" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrolling Skills Section moved up to be visible without scrolling -->
+        <section class="skills-marquee">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <span class="skill-item"><img src="icons/davinciresolve.webp" alt="DavinciResolve" class="skill-icon">DavinciResolve</span>
+                    <span class="skill-item"><img src="icons/Ardrino.webp" alt="Arduino" class="skill-icon">Arduino</span>
+            
+            <section id="home" class="home-section">
+                <div class="container">
+                    <div class="intro-container">
+                        <div class="intro">
+                            <h1><span class="intro-greeting">Hi, I'm</span><span class="highlight handwritten">Nitigya Aswani</span></h1>
+                            <h2>Software Developer</h2>
+                            
+                            <p class="bio">
+                                A First year student at MMMUT Gorakhpur who loves to learn a lot and finding solution to problems around me
+                            </p>
+                            
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/nitigyaaswani/" target="_blank" rel="noopener noreferrer">
+                                    <img src="icons/linkedin-logo.png" alt="LinkedIn" class="social-icon">
+                                </a>
+                                <a href="https://github.com/AswaniNitigya" target="_blank" rel="noopener noreferrer">
+                                    <img src="icons/github.png" alt="GitHub" class="social-icon">
+                                </a>
+                                <a href="https://leetcode.com/u/AswaniNitigya/" target="_blank" rel="noopener noreferrer">
+                                    <img src="icons/leetcode.webp" alt="LeetCode" class="social-icon">
+                                </a>
+                                <a href="https://www.codechef.com/users/nitigyaaswani" target="_blank" rel="noopener noreferrer">
+                                    <img src="icons/Codechef.webp" alt="CodeChef" class="social-icon">
+                                </a>
+                                <a href="https://codeforces.com/profile/aswaninitigya" target="_blank" rel="noopener noreferrer">
+                                    <img src="icons/codeforces.webp" alt="CodeForces" class="social-icon">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="profile-photo-container">
+                            <img src="icons/nitigya aswani.jpeg" alt="Nitigya Aswani" class="profile-photo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scrolling Skills Section moved up to be visible without scrolling -->
+            <section class="skills-marquee">
+                <div class="marquee-container">
+                    <div class="marquee-content">
+                        <span class="skill-item"><img src="icons/davinciresolve.webp" alt="DavinciResolve" class="skill-icon">DavinciResolve</span>
+                        <span class="skill-item"><img src="icons/Ardrino.webp" alt="Arduino" class="skill-icon">Arduino</span>
+                        <span class="skill-item"><img src="icons/html5.png" alt="HTML" class="skill-icon">HTML</span>
+                        <span class="skill-item"><img src="icons/css.png" alt="CSS" class="skill-icon">CSS</span>
+                        <span class="skill-item"><img src="icons/C++.png" alt="C++" class="skill-icon">C++</span>
+                        <span class="skill-item"><img src="icons/github.png" alt="Github" class="skill-icon">Github</span>
+                        <span class="skill-item"><img src="icons/leetcode.webp" alt="LeetCode" class="skill-icon">LeetCode</span>
+                        <span class="skill-item"><img src="icons/Codechef.webp" alt="CodeChef" class="skill-icon">CodeChef</span>
+                        <span class="skill-item"><img src="icons/codeforces.webp" alt="CodeForces" class="skill-icon">CodeForces</span>
+                        <span class="skill-item"><img src="icons/linkedin-logo.png" alt="LinkedIn" class="skill-icon">LinkedIn</span>
+                        
+                        <!-- Duplicate for continuous scrolling -->
+                        <span class="skill-item"><img src="icons/davinciresolve.webp" alt="DavinciResolve" class="skill-icon">DavinciResolve</span>
+                        <span class="skill-item"><img src="icons/Ardrino.webp" alt="Arduino" class="skill-icon">Arduino</span>
+                        <span class="skill-item"><img src="icons/html5.png" alt="HTML" class="skill-icon">HTML</span>
+                        <span class="skill-item"><img src="icons/css.png" alt="CSS" class="skill-icon">CSS</span>
+                        <span class="skill-item"><img src="icons/C++.png" alt="C++" class="skill-icon">C++</span>
+                        <span class="skill-item"><img src="icons/github.png" alt="Github" class="skill-icon">Github</span>
+                        <span class="skill-item"><img src="icons/leetcode.webp" alt="LeetCode" class="skill-icon">LeetCode</span>
+                        <span class="skill-item"><img src="icons/Codechef.webp" alt="CodeChef" class="skill-icon">CodeChef</span>
+                        <span class="skill-item"><img src="icons/codeforces.webp" alt="CodeForces" class="skill-icon">CodeForces</span>
+                        <span class="skill-item"><img src="icons/linkedin-logo.png" alt="LinkedIn" class="skill-icon">LinkedIn</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <div class="container">
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="projects-grid">
+                        <!-- Folder 1: Arduino Project -->
+                        <div class="project-item folder-project">
+                            <a href="arduino-project.html" class="folder-link">
+                                <div class="folder-icon">
+                                    <i class="fas fa-folder"></i>
+                                    <span>Arduino Project</span>
+                                </div>
+                                <div class="folder-preview">
+                                    <h3>Arduino School Project</h3>
+                                    <p>School project using Arduino microcontroller to build an interactive system.</p>
+                                    <div class="view-more">
+                                        <span>View Project <i class="fas fa-arrow-right"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- Folder 2: Web Development -->
+                        <div class="project-item folder-project">
+                            <a href="web-project.html" class="folder-link">
+                                <div class="folder-icon">
+                                    <i class="fas fa-folder"></i>
+                                    <span>HTML CSS JS Website</span>
+                                </div>
+                                <div class="folder-preview">
+                                    <h3>Basic Web Development</h3>
+                                    <p>A simple website built using HTML, CSS, and JavaScript fundamentals.</p>
+                                    <div class="view-more">
+                                        <span>View Project <i class="fas fa-arrow-right"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- Presentation 1 -->
+                        <div class="project-item presentation-project">
+                            <a href="https://www.canva.com/design/DAGg-Ssy5iI/zyaQI7UYt1VPdZS-e5gSMw/view?utm_content=DAGg-Ssy5iI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf51888592b" target="_blank" rel="noopener noreferrer">
+                                <div class="presentation-card">
+                                    <div class="presentation-thumbnail">
+                                        <!-- Replaced icon with thumbnail image -->
+                                        <img src="icons/hackblitz.png" alt="Hackblitz Presentation Thumbnail" class="thumbnail-img">
+                                    </div>
+                                    <div class="presentation-info">
+                                        <h3>Hackblitz Presentation</h3>
+                                        <p>A comprehensive presentation on engineering concepts and applications.</p>
+                                        <div class="presentation-meta">
+                                            <span><i class="fas fa-external-link-alt"></i> Canva Presentation</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- Presentation 2 -->
+                        <div class="project-item presentation-project">
+                            <a href="https://www.canva.com/design/DAGjHjrSJKc/rfoIjDkWonPSEm9cZgX79A/view?utm_content=DAGjHjrSJKc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he739db724b" target="_blank" rel="noopener noreferrer">
+                                <div class="presentation-card">
+                                    <div class="presentation-thumbnail">
+                                        <!-- Replaced icon with thumbnail image -->
+                                        <img src="icons/thirdeyeproject.png" alt="Arduino Project Presentation Thumbnail" class="thumbnail-img">
+                                    </div>
+                                    <div class="presentation-info">
+                                        <h3>Arduino Project Presentation</h3>
+                                        <p>An in-depth technical presentation showcasing my academic research and findings.</p>
+                                        <div class="presentation-meta">
+                                            <span><i class="fas fa-external-link-alt"></i> Canva Presentation</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Links and Contact Sections Container with shared background -->
+        <div class="shared-background-container">
+            <div class="video-background">
+                <video autoplay muted loop playsinline id="links-bg-video">
+                    <source src="icons/background2.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"></div>
+            </div>
+            
+            <!-- Links Section with Icons -->
+            <section id="links" class="links-section">
+                <div class="container">
+                    <h2 class="section-title">Useful Links</h2>
+                    <div class="links-grid">
+                        <a href="https://github.com/AswaniNitigya" target="_blank" rel="noopener noreferrer" class="link-card">
+                            <img src="icons/github.png" alt="GitHub" class="link-icon">
+                            <span class="link-text">GitHub</span>
+                        </a>
+                        <a href="https://leetcode.com/u/AswaniNitigya/" target="_blank" rel="noopener noreferrer" class="link-card">
+                            <img src="icons/leetcode.webp" alt="LeetCode" class="link-icon">
+                            <span class="link-text">LeetCode</span>
+                        </a>
+                        <a href="https://www.codechef.com/users/nitigyaaswani" target="_blank" rel="noopener noreferrer" class="link-card">
+                            <img src="icons/Codechef.webp" alt="CodeChef" class="link-icon">
+                            <span class="link-text">CodeChef</span>
+                        </a>
+                        <a href="https://codeforces.com/profile/aswaninitigya" target="_blank" rel="noopener noreferrer" class="link-card">
+                            <img src="icons/codeforces.webp" alt="CodeForces" class="link-icon">
+                            <span class="link-text">CodeForces</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/nitigyaaswani/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <img src="icons/linkedin-logo.png" alt="LinkedIn" class="contact-icon">
+                            <span class="contact-text">Connect on LinkedIn</span>
+                            <p class="contact-description">Feel free to reach out to me on LinkedIn for professional inquiries, collaboration opportunities, or just to say hello!</p>
+                            <div class="contact-button">
+                                <span>Send Message <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Nitigya Aswani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

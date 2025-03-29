@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Project - Nitigya Aswani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#projects" class="active">PROJECTS</a></li>
+                <li><a href="index.html#links">LINKS</a></li>
+                <li><a href="index.html#contact">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cursor"></div>
+
+    <main>
+        <section class="project-detail-section">
+            <div class="container">
+                <div class="back-link">
+                    <a href="index.html#projects"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                </div>
+                
+                <div class="project-header">
+                    <div class="project-title">
+                        <i class="fas fa-microchip project-icon"></i>
+                        <h1>Arduino School Project</h1>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Hardware</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">DIY</span>
+                        <span class="tag">Smart Devices</span>
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    <p>An Arduino-based school project focused on creating assistive technology for the visually impaired. The project includes two main components: Smart Safety Goggles and a Smart Walking Stick, both designed to help detect obstacles and improve mobility.</p>
+                </div>
+                
+                <div class="project-content">
+                    <div class="content-section">
+                        <h2>Project Components</h2>
+                        
+                        <div class="component-section">
+                            <h3 class="component-title"><i class="fas fa-glasses"></i> Smart Safety Goggles</h3>
+                            <div class="component-content">
+                                <div class="component-description">
+                                    <p>The Smart Safety Goggles use ultrasonic sensors to detect obstacles at eye level and above, helping visually impaired users navigate their environment safely.</p>
+                                    <div class="features-list">
+                                        <h4>Features:</h4>
+                                        <ul>
+                                            <li>Ultrasonic sensor for obstacle detection</li>
+                                            <li>Vibration motor for haptic feedback</li>
+                                            <li>Arduino-controlled processing</li>
+                                            <li>Portable and lightweight design</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="component-image">
+                                    <img src="projects/arduino-project/Circuit Diagram/goggles.png" alt="Smart Goggles Circuit Diagram" class="circuit-image">
+                                </div>
+                            </div>
+                            
+                            <div class="video-section">
+                                <h4>Project Demonstration:</h4>
+                                <div class="video-container">
+                                    <video controls class="demo-video">
+                                        <source src="projects/arduino-project/smart safety goggles.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            
+                            <div class="code-section">
+                                <h4>Arduino Code:</h4>
+                                <div class="code-container">
+                                    <pre><code>// DIY smart glass for blind
+// using by ultrasonic sensor
+// Created by Technical idEas (yt)
+
+#define trigPin1 5
+#define echoPin1 6
+#define motor1 7
+
+long duration1;
+int distance1;
+
+void setup() {
+  pinMode(trigPin1, OUTPUT);
+  pinMode(echoPin1, INPUT);
+  pinMode(motor1, OUTPUT);
+  
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Obstacle detection for sensor 1
+  digitalWrite(trigPin1, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin1, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin1, LOW);
+  
+  duration1 = pulseIn(echoPin1, HIGH);
+  distance1 = duration1 * 0.034 / 2;
+  
+  Serial.print("Distance1: ");
+  Serial.println(distance1);
+  
+  // Activate motor if obstacle is detected within threshold
+  if (distance1 < 100) {
+    digitalWrite(motor1, HIGH);
+  } else {
+    digitalWrite(motor1, LOW);
+  }
+  
+  delay(100);
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="component-section">
+                            <h3 class="component-title"><i class="fas fa-walking"></i> Smart Walking Stick</h3>
+                            <div class="component-content">
+                                <div class="component-description">
+                                    <p>The Smart Walking Stick is designed to detect obstacles at ground level, enhancing mobility for visually impaired individuals by providing early warnings about potential hazards.</p>
+                                    <div class="features-list">
+                                        <h4>Features:</h4>
+                                        <ul>
+                                            <li>Multiple ultrasonic sensors for wide-range detection</li>
+                                            <li>Buzzer for audible alerts</li>
+                                            <li>Vibration feedback system</li>
+                                            <li>Durable construction for daily use</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="component-image">
+                                    <img src="projects/arduino-project/Circuit Diagram/stick.png" alt="Smart Walking Stick Circuit Diagram" class="circuit-image">
+                                </div>
+                            </div>
+                            
+                            <div class="video-section">
+                                <h4>Project Demonstration:</h4>
+                                <div class="video-container">
+                                    <video controls class="demo-video">
+                                        <source src="projects/arduino-project/Smart Walking Stick.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            
+                            <div class="code-section">
+                                <h4>Arduino Code:</h4>
+                                <div class="code-container">
+                                    <pre><code>// Smart Walking Stick for the Visually Impaired
+// Using multiple ultrasonic sensors
+
+#define trigPin1 9
+#define echoPin1 10
+#define trigPin2 11
+#define echoPin2 12
+#define buzzer 8
+#define vibMotor 7
+
+long duration1, duration2;
+int distance1, distance2;
+
+void setup() {
+  pinMode(trigPin1, OUTPUT);
+  pinMode(echoPin1, INPUT);
+  pinMode(trigPin2, OUTPUT);
+  pinMode(echoPin2, INPUT);
+  pinMode(buzzer, OUTPUT);
+  pinMode(vibMotor, OUTPUT);
+  
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Measure distance from first sensor
+  distance1 = getDistance(trigPin1, echoPin1);
+  
+  // Measure distance from second sensor
+  distance2 = getDistance(trigPin2, echoPin2);
+  
+  // Output distances to serial monitor
+  Serial.print("Distance1: ");
+  Serial.print(distance1);
+  Serial.print(" cm, Distance2: ");
+  Serial.print(distance2);
+  Serial.println(" cm");
+  
+  // Alert if obstacles detected by either sensor
+  if (distance1 < 80 || distance2 < 80) {
+    // Closer obstacles trigger faster alerts
+    int delayTime = map(min(distance1, distance2), 0, 80, 100, 500);
+    alertUser(delayTime);
+  } else {
+    // No obstacles detected
+    noTone(buzzer);
+    digitalWrite(vibMotor, LOW);
+  }
+  
+  delay(100);
+}
+
+// Function to measure distance using ultrasonic sensor
+int getDistance(int trigPin, int echoPin) {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  
+  long duration = pulseIn(echoPin, HIGH);
+  int distance = duration * 0.034 / 2;
+  
+  return distance;
+}
+
+// Function to alert user with buzzer and vibration
+void alertUser(int delayTime) {
+  tone(buzzer, 1000);
+  digitalWrite(vibMotor, HIGH);
+  delay(delayTime);
+  noTone(buzzer);
+  digitalWrite(vibMotor, LOW);
+  delay(delayTime);
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Project Details</h2>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h3>Components Used</h3>
+                                <ul>
+                                    <li>Arduino Uno Board</li>
+                                    <li>Ultrasonic Sensors (HC-SR04)</li>
+                                    <li>Vibration Motors</li>
+                                    <li>Buzzer</li>
+                                    <li>Jumper Wires</li>
+                                    <li>9V Batteries</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <h3>Functionality</h3>
+                                <p>The system detects obstacles using ultrasonic sensors and provides feedback through vibration motors and audio signals. The Smart Goggles focus on obstacles at head level, while the Smart Stick detects ground-level obstacles, creating a comprehensive mobility solution.</p>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <h3>Learning Outcomes</h3>
+                                <ul>
+                                    <li>Arduino programming in C/C++</li>
+                                    <li>Circuit design and implementation</li>
+                                    <li>Working with sensors and actuators</li>
+                                    <li>Problem-solving for real-world applications</li>
+                                    <li>Designing assistive technology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section gallery-section">
+                        <h2>Project Gallery</h2>
+                        <div class="project-gallery">
+                            <div class="gallery-grid">
+                                <div class="gallery-item" onclick="openLightbox(0)">
+                                    <img src="projects/arduino-project/Project Gallery/IMG20221014202142.jpg" alt="Arduino Project Photo 1" class="gallery-image">
+                                </div>
+                                <div class="gallery-item" onclick="openLightbox(1)">
+                                    <img src="projects/arduino-project/Project Gallery/IMG20221014201738.jpg" alt="Arduino Project Photo 2" class="gallery-image">
+                                </div>
+                                <div class="gallery-item" onclick="openLightbox(2)">
+                                    <img src="projects/arduino-project/Project Gallery/IMG20221014202151.jpg" alt="Arduino Project Photo 3" class="gallery-image">
+                                </div>
+                                <div class="gallery-item" onclick="openLightbox(3)">
+                                    <img src="projects/arduino-project/Project Gallery/IMG20221022092434.jpg" alt="Arduino Project Photo 4" class="gallery-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Project Files</h2>
+                        <div class="files-section">
+                            <p>All project files are available in the repository:</p>
+                            <div class="project-files-list">
+                                <a href="projects/arduino-project/CODE/safety%20googles.txt" target="_blank" class="file-link">
+                                    <i class="fas fa-file-code"></i>
+                                    <span>safety_googles.txt</span>
+                                </a>
+                                <a href="projects/arduino-project/CODE/stick.txt" target="_blank" class="file-link">
+                                    <i class="fas fa-file-code"></i>
+                                    <span>stick.txt</span>
+                                </a>
+                                <a href="projects/arduino-project/Circuit Diagram/goggles.png" target="_blank" class="file-link">
+                                    <i class="fas fa-file-image"></i>
+                                    <span>goggles_circuit.png</span>
+                                </a>
+                                <a href="projects/arduino-project/Circuit Diagram/stick.png" target="_blank" class="file-link">
+                                    <i class="fas fa-file-image"></i>
+                                    <span>stick_circuit.png</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+    <!-- Lightbox Element -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+            <button class="lightbox-nav prev-btn" onclick="changeImage(-1)"><i class="fas fa-chevron-left"></i></button>
+            <img id="lightbox-img" src="" alt="Fullscreen Image">
+            <button class="lightbox-nav next-btn" onclick="changeImage(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    
+    <script>
+        // Gallery image array
+        const galleryImages = [
+            "projects/arduino-project/Project Gallery/IMG20221014202142.jpg",
+            "projects/arduino-project/Project Gallery/IMG20221014201738.jpg",
+            "projects/arduino-project/Project Gallery/IMG20221014202151.jpg",
+            "projects/arduino-project/Project Gallery/IMG20221022092434.jpg"
+        ];
+        
+        let currentImageIndex = 0;
+        
+        // Lightbox functionality
+        function openLightbox(index) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            currentImageIndex = index;
+            lightboxImg.src = galleryImages[currentImageIndex];
+            lightbox.style.display = 'block';
+            
+            // Prevent scrolling when lightbox is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            
+            // Re-enable scrolling
+            document.body.style.overflow = 'auto';
+        }
+        
+        function changeImage(direction) {
+            currentImageIndex = (currentImageIndex + direction + galleryImages.length) % galleryImages.length;
+            document.getElementById('lightbox-img').src = galleryImages[currentImageIndex];
+        }
+        
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('lightbox').style.display === 'block') {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowRight') {
+                    changeImage(1);
+                } else if (e.key === 'ArrowLeft') {
+                    changeImage(-1);
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
