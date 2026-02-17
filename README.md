@@ -1,6 +1,6 @@
 # Nitigya Aswani Portfolio Website
-https://aswaninitigya.github.io/Portfolio/
-
+[(https://aswaninitigya.github.io/portfolio-v1-html-css/)
+]
 A personal portfolio website with a dark theme
 
 ## Features
