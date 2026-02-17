@@ -1,5 +1,5 @@
 # Nitigya Aswani Portfolio v1
-View link : [Portfolio](https://aswaninitigya.github.io/portfolio-v1-html-css/)
+View link : [Portfolio](https://portfolio-aswaninitigyas-projects.vercel.app/)
 
 
 
