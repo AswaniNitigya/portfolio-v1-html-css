@@ -769,6 +769,25 @@ h2 {
     .nav-links li {
         margin: 0 1rem;
     }
+
+    .nav-container {
+        padding: 0 1rem;
+        border-radius: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0.8rem;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
     
     h1 {
         font-size: 2rem;
@@ -844,3 +863,6 @@ h2 {
     background-color: rgba(18, 18, 18, 0.7);
     z-index: 1;
 } 
+section {
+    scroll-margin-top: 20px;
+}
